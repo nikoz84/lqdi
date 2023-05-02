@@ -8,14 +8,14 @@
 
 - Run `./vendor/bin/sail php artisan migrate`
 
-## List route emails and names table ('list-emails')
+## Seeder for emails or create a new item with the home form  ('list-emails')
 
 - Run `./vendor/bin/sail php artisan db:seed`
   
 ### Routes available
 
 - `/` -> home PAGE
-- `list/emails` -> lista de emails
+- `/list-emails` -> lista de emails
   
 ### for compile javascript vue app for production
 
