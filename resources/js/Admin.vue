@@ -12,26 +12,38 @@ onMounted(() => {
     })
 })
 
+
+function goBack(){
+    location.replace('/')
+}
+
 </script>
 <template>
-    <table class="table">
-        <thead>
-            <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr v-for="(item,i) in paginator.data" :key="i">
-                <th scope="row">{{ item.id }}</th>
-                <td >
-                    {{ item.nome }}
-                </td>
-                <td >
-                    {{ item.email }}
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <section class="container" style="padding-top: 30px;">
+
+        <table class="table mt-10">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(item,i) in paginator.data" :key="i">
+                    <th scope="row">{{ item.id }}</th>
+                    <td >
+                        {{ item.nome }}
+                    </td>
+                    <td >
+                        {{ item.email }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="mt-10">
+            <button class="btn btn-rounded-black" @click="goBack">Voltar</button>
+        </div>
+    </section>
 </template>

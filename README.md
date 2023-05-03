@@ -20,3 +20,11 @@
 ### for compile javascript vue app for production
 
 - Run `npm run build`
+
+#### INICIO
+
+- `11:58`
+
+#### ENVIO
+
+- `20:20`
